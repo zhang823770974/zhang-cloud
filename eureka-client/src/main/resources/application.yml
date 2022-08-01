@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: eureka-client-service
+server:
+  port: 8762
+#多端口都启动，注册多个实例，相当于小的集群
+#server:
+#  port: 8763
+eureka:
+  client:
+    serviceUrl:
+      # eureka-client-service服务注册到eureka服务注册中心
+      defaultZone: http://peer1:8761/eureka

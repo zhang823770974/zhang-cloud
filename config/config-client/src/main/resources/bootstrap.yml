@@ -1,0 +1,21 @@
+server:
+  port: 9969
+
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      # 指明配置服务注册中心地址
+      uri: http://localhost:9971/
+      label: master
+      # 配置环境
+      profile: dev
+      discovery:
+        enabled: true
+        serviceId: config-server
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9972/eureka/

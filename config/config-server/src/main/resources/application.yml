@@ -1,0 +1,25 @@
+server:
+  port: 9971
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zhang823770974/SpringcloudConfig/
+          # 配置仓库路径
+          searchPaths: respo
+          username:
+          password:
+      # 配置仓库的分支
+      label: master
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9972/eureka/
+
+
+
