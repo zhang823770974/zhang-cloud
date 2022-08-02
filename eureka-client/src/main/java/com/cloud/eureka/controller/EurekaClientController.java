@@ -3,6 +3,9 @@ package com.cloud.eureka.controller;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * Eureka客户端
+ */
 
 @RestController
 @RequestMapping("/eureka/EurekaClientController")
