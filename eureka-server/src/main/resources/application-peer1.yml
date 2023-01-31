@@ -1,30 +1,30 @@
-server:
-  port: 8761
-
-spring:
-  profiles: peer1
-eureka:
-  instance:
-    hostname: peer1
-  client:
-    serviceUrl:
-      defaultZone: http://peer2:8760/eureka/
-
-#spring:
-#  application:
-#    name: eureka-server
-#
 #server:
 #  port: 8761
 #
+#spring:
+#  profiles: peer1
 #eureka:
 #  instance:
-#    hostname: localhost
+#    hostname: peer1
 #  client:
-#    # 是否将自己注册到Eureka Server，默认为true。由于当前这个应用就是Eureka Server，故而设为false。
-#    registerWithEureka: false
-#    # 表示是否从Eureka Server获取注册信息，默认为true。因为这是一个单点的Eureka Server，不需要同步其他的Eureka Server节点的数据，故而设为false。
-#    fetchRegistry: false
 #    serviceUrl:
-#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-
+#      defaultZone: http://peer2:8760/eureka/
+#
+##spring:
+##  application:
+##    name: eureka-server
+##
+##server:
+##  port: 8761
+##
+##eureka:
+##  instance:
+##    hostname: localhost
+##  client:
+##    # 是否将自己注册到Eureka Server，默认为true。由于当前这个应用就是Eureka Server，故而设为false。
+##    registerWithEureka: false
+##    # 表示是否从Eureka Server获取注册信息，默认为true。因为这是一个单点的Eureka Server，不需要同步其他的Eureka Server节点的数据，故而设为false。
+##    fetchRegistry: false
+##    serviceUrl:
+##      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#

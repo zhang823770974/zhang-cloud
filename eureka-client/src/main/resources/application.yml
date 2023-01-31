@@ -1,13 +1,13 @@
 spring:
   application:
-    name: eureka-client-service
+    name: eureka-client
 server:
   port: 8762
-#¶à¶Ë¿Ú¶¼Æô¶¯£¬×¢²á¶à¸öÊµÀı£¬Ïàµ±ÓÚĞ¡µÄ¼¯Èº
+#å¤šç«¯å£éƒ½å¯åŠ¨ï¼Œæ³¨å†Œå¤šä¸ªå®ä¾‹ï¼Œç›¸å½“äºå°çš„é›†ç¾¤
 #server:
 #  port: 8763
 eureka:
   client:
     serviceUrl:
-      # eureka-client-service·şÎñ×¢²áµ½eureka·şÎñ×¢²áÖĞĞÄ
-      defaultZone: http://peer1:8761/eureka
+      # eureka-client-serviceæœåŠ¡æ³¨å†Œåˆ°eurekaæœåŠ¡æ³¨å†Œä¸­å¿ƒ
+      defaultZone: http://localhost:8761/eureka/

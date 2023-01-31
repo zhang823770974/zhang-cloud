@@ -22,4 +22,6 @@ public class HelloFeignController {
     public String myDemo(@RequestParam String name){
         return feignServiceHello.myDemoFeign(name);
     }
+
+
 }

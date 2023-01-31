@@ -11,6 +11,7 @@
         <module name="service-ribbon" />
         <module name="service-zuul" />
         <module name="eureka-client" />
+        <module name="service-base" />
         <module name="config-client" />
         <module name="config-eureka-server" />
         <module name="eureka-server" />
@@ -25,6 +26,7 @@
       <module name="config-server" target="1.8" />
       <module name="eureka-client" target="1.8" />
       <module name="eureka-server" target="1.8" />
+      <module name="service-base" target="8" />
       <module name="service-feign" target="1.8" />
       <module name="service-ribbon" target="1.8" />
       <module name="service-zuul" target="1.8" />
@@ -39,6 +41,7 @@
       <module name="config-server" options="-parameters" />
       <module name="eureka-client" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="service-base" options="-parameters" />
       <module name="service-feign" options="-parameters" />
       <module name="service-ribbon" options="-parameters" />
       <module name="service-zuul" options="-parameters" />
