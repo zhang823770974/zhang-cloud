@@ -35,7 +35,7 @@ public class SecurityZuulFilter extends ZuulFilter {
     public Object run() throws ZuulException {
         RequestContext context = RequestContext.getCurrentContext();
         HttpServletRequest request = context.getRequest();
-        log.info("###"+request.getCookies());
+        log.info("####"+request.getCookies());
         log.info(String.format("%s >>> %s", request.getMethod(), request.getRequestURL().toString()));
         Object accessToken  = request.getParameter("token");
         if(accessToken == null){
