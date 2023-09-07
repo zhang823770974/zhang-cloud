@@ -26,12 +26,10 @@ public class SecurityZuulFilter extends ZuulFilter {
         return 0;
     }
 
-    @Override
     public boolean shouldFilter() {
         return true;
     }
 
-    @Override
     public Object run() throws ZuulException {
         RequestContext context = RequestContext.getCurrentContext();
         HttpServletRequest request = context.getRequest();
